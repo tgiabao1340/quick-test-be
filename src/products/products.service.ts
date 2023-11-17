@@ -9,16 +9,20 @@ export class ProductsService {
 
   async findAll(
     name: string = '',
+    priceMin: number = -1,
+    priceMax: number = -1,
     skip: number = 0,
     limit: number = 10,
-  ): Promise<any> {
-    if (name === '') {
-      return await this.productModel.find().skip(skip).limit(limit).exec();
+  ): Promise<Product[]> {
+    let query = {};
+    if (name !== '') {
+      query = { ...query, name: { $regex: '.*' + name + '.*' } };
     }
-    return await this.productModel
-      .find({ name: { $regex: '.*' + name + '.*' } })
-      .skip(skip)
-      .limit(limit)
-      .exec();
+
+    if (priceMin !== -1 && priceMax !== -1) {
+      query = { ...query, price: { $gte: priceMin, $lte: priceMax } };
+    }
+
+    return await this.productModel.find(query).skip(skip).limit(limit).exec();
   }
 }

@@ -17,8 +17,8 @@ export class Product {
   @Prop({ type: String })
   description: string;
 
-  @Prop({ type: String })
-  price: string;
+  @Prop({ type: Number })
+  price: number;
 }
 
 export const ProductSchema = SchemaFactory.createForClass(Product);
