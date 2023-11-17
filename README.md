@@ -44,112 +44,128 @@ db.products.insertMany([
               price: 100,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "COMMON"
           },
           {
               name: "Test 2",
               price: 200,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
           {
               name: "Test 3",
               price: 500,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
                     {
               name: "Test 4",
               price: 1000,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
                     {
               name: "Test 5",
               price: 100,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
           {
               name: "Test 6",
               price: 200,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
           {
               name: "Test 7",
               price: 500,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
                     {
               name: "Test 8",
               price: 1000,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "LEGENDARY"
           },
                     {
               name: "Test 9",
               price: 100,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
           {
               name: "Test 10",
               price: 200,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
           {
               name: "Test 11",
               price: 500,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "LEGENDARY"
           },
                     {
               name: "Test 12",
               price: 1000,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
                     {
               name: "Test 13",
               price: 100,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           },
           {
               name: "Test 14",
               price: 200,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "LEGENDARY"
           },
           {
               name: "Test 15",
               price: 500,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "LEGENDARY"
           },
                     {
               name: "Test 16",
               price: 5002,
               url: "https://picsum.photos/200/300",
               description: "Test",
-              createdDate: ISODate()
+              createdDate: ISODate(),
+              type: "EPIC"
           }
       ]);
 ```

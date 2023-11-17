@@ -13,7 +13,8 @@ export class ProductsController {
     @Query('limit') limit: number,
     @Query('priceMin') priceMin: number,
     @Query('priceMax') priceMax: number,
+    @Query('type') type: string,
   ): Promise<Product[]> {
-    return this.service.findAll(name, priceMin, priceMax, skip, limit);
+    return this.service.findAll(name, priceMin, priceMax, type, skip, limit);
   }
 }

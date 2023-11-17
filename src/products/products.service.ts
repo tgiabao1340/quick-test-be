@@ -11,12 +11,17 @@ export class ProductsService {
     name: string = '',
     priceMin: number = -1,
     priceMax: number = -1,
+    type: string = 'ALL',
     skip: number = 0,
     limit: number = 10,
   ): Promise<Product[]> {
     let query = {};
     if (name !== '') {
       query = { ...query, name: { $regex: '.*' + name + '.*' } };
+    }
+
+    if (type != 'ALL') {
+      query = { ...query, type };
     }
 
     if (priceMin !== -1 && priceMax !== -1) {
